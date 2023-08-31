@@ -43,32 +43,40 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
-.back-to-top {
+/* Scroll-to-Top Icon Styles */
+.scroll-to-top {
   position: fixed;
   display: none;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 50%;
   right: 15px;
   bottom: 15px;
   background: #149ddd;
   color: #fff;
-  transition: display 0.5s ease-in-out;
+  transition: background 0.2s ease-in-out;
   z-index: 99999;
 }
 
-.back-to-top i {
-  font-size: 24px;
-  position: absolute;
-  top: 7px;
-  left: 8px;
+.scroll-to-top a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
 }
 
-.back-to-top:hover {
-  color: #fff;
+.scroll-to-top i {
+  font-size: 24px;
+}
+
+.scroll-to-top:hover {
   background: #2eafec;
   transition: background 0.2s ease-in-out;
 }
+
 
 /*--------------------------------------------------------------
 # Header
